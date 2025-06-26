@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>我的交互式仪表板</title>
+  <style>body{font-family: sans-serif; padding:2rem;}</style>
+</head>
+<body>
+  <h1>数据仪表板</h1>
+  <div id="chart"></div>
+  <script>
+    const trace = { x:[1,2,3,4], y:[10,15,13,17], mode:'lines+markers', type:'scatter' };
+    Plotly.newPlot('chart',[trace]);
+  </script>
+  <section id="about">
+    <h2>关于我</h2>
+    <p>你好，我是蒋楠，来自中国，本科学生，热衷于交互式可视化。</p>
+  </section>
+</body>
+</html>
+
